@@ -1,7 +1,24 @@
 aid: kechowpharma
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/kechowpharma.png
 name: kechowpharma
-description: kechowpharma is a company surfaced as a portfolio company of qiming and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Kechow Pharma (Shanghai Kezhou Pharmaceutical Co., Ltd.) is a clinical-stage biopharmaceutical
+  company founded in 2014 and headquartered in Shanghai's Zhangjiang High-Tech Park. It focuses on
+  innovative small-molecule drug research and development in oncology and free-radical-related diseases,
+  pursuing Best-in-Class therapeutics based on independent intellectual property. Its lead approved
+  product is Kelopin (tolametinib), a MEK inhibitor for advanced NRAS-mutant melanoma. Surfaced as a
+  portfolio company of Qiming Venture Partners; no public developer or API surface was found during
+  enrichment.
 url: https://raw.githubusercontent.com/api-evangelist/kechowpharma/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Pharmaceutical
+- Biopharmaceutical
+- Oncology
+- Drug Development
+- Small Molecule
+- Clinical Stage
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/kechowpharma-domain-security.yml
 - type: Website
   url: https://kechowpharma.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
